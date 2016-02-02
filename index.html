@@ -1,200 +1,68 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<title>Javascript Tabs Accorion</title>
+		<link href="styletabs.css" rel="stylesheet" />
+		<script src="jquery.min.js"></script>
+		<script src="scritptabs.js"></script>
+	</head>
+	<body >
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Custom-tabs-accordion : Here you can find a custom tabs and accordion with HTML, CSS and jQuery.">
+	<div class="container">
+		<div class="row">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Custom-tabs-accordion</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/Ganpatkakar/Custom-Tabs-Accordion">View on GitHub</a>
-
-          <h1 id="project_title">Custom-tabs-accordion</h1>
-          <h2 id="project_tagline">Here you can find a custom tabs and accordion with HTML, CSS and jQuery.</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/Ganpatkakar/Custom-Tabs-Accordion/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/Ganpatkakar/Custom-Tabs-Accordion/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <p>&lt;!DOCTYPE html&gt;
-
-    </p>
-        Javascript Tabs Accorion
-        
-        
-        
+			<div class="tablinks">
+				<ul class="tab">
+				  <li><a href="#about">About JavaScript tabs</a></li>
+				  <li><a href="#advantages">Advantages of tabs</a></li>
+				  <li><a href="#usage">Using tabs</a></li>
+				</ul>
+			</div>
+			<div class="tabcon">
+				<div class="content" id='about'>
+					<h4>This is the first tab</h4>
+					<p>Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab.Hi, this is the first tab.Hi, this is the first tab.Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab.</p>
+				</div>
+				<div class="content" id='advantages'>
+					<h4>This is the second tab</h4>
+					<p>This is the 2nd tab. Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab.Hi, this is the first tab.Hi, this is the first tab.Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab.</p>
+				</div>
+				<div class="content" id='usage'>
+					<h4>This is the third tab</h4>
+					<p>And this is the 3rd tab. Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab.Hi, this is the first tab.Hi, this is the first tab.Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab.</p>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
-.container {
-    width: 85%;
-    margin: auto;
-}
-.row:after {
-    content: "";
-    clear: both;
-    display: block;
-}
+		<div class="container">
+			<div class="row">
 
-/**Tab page design*/
-.tablinks ul.tab {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 7px;
-}
-ul.tab li{
-    display: inline;
-}
-.tab li a {
-    color: #FFFFFF;
-    text-decoration: none;
-    padding: 8px 25px;
-    border: 1px solid rgba(0,0,0,.2);
-    background: #ba2f14;
-}
+				<div class="accordians">
+					<div class="accordian-section">	
+						<a href="#acc1">About JavaScript tabs</a>
+						<div class="content" id='acc1'>
+							<p>Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab.Hi, this is the first tab.Hi, this is the first tab.Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab.</p>
+						</div>
+					</div>
 
-ul.tab li.active a{
-    color: #151414;
-    background: #fff;
-    padding: 9px 25px;
-    border-bottom: 0;
-}
-.tabcon {
-    width: 100%;
-    border: 1px solid rgba(0,0,0,.2);
-    padding: 15px;
-}
-.content {
-    display: none;
-}
+					<div class="accordian-section">	
+						<a href="#acc2">Advantages of tabs</a>
+						<div class="content" id='acc2'>
+							<p>This is the 2nd tab. Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab.Hi, this is the first tab.Hi, this is the first tab.Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab.</p>
+						</div>
+					</div>
 
+					<div class="accordian-section">	
+						<a href="#acc3">Using tabs</a>
+						<div class="content" id='acc3'>
+							<p>And this is the 3rd tab. Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab.Hi, this is the first tab.Hi, this is the first tab.Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-/*Accordion CSS*/
-.accordians{
-    overflow: hidden;
-    box-shadow: 0px 1px 3px rgba(0,0,0,0.25);
-    border-radius: 3px;
-    background: #EFEAEA;
-    margin-top:  50px;
-}
-.accordian-section {
-    box-sizing: border-box;
-}
-.accordian-section a {
-    width: 100%;
-    padding: 10px;
-    display: inline-block;
-    background: #ba2f14;
-    border-bottom: 1px solid #9E1C03;   
-    color: #fff;
-    text-decoration: none;
-}
-.accordian-section .content {
-    padding: 10px;
-}
-
-
-/*Media Queery for responsive container*/
-<a href="https://github.com/media" class="user-mention">@media</a> only screen and (max-width: 768px) {
-.container {
-    width: 95%;
-    margin: auto;
-}
-}
-
-
-<pre><code>&lt;/head&gt;
-&lt;body &gt;
-
-&lt;div class="container"&gt;
-    &lt;div class="row"&gt;
-
-        &lt;div class="tablinks"&gt;
-            &lt;ul class="tab"&gt;
-              &lt;li&gt;&lt;a href="#about"&gt;About JavaScript tabs&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href="#advantages"&gt;Advantages of tabs&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href="#usage"&gt;Using tabs&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/div&gt;
-        &lt;div class="tabcon"&gt;
-            &lt;div class="content" id='about'&gt;
-                &lt;h4&gt;This is the first tab&lt;/h4&gt;
-                &lt;p&gt;Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab.Hi, this is the first tab.Hi, this is the first tab.Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab.&lt;/p&gt;
-            &lt;/div&gt;
-            &lt;div class="content" id='advantages'&gt;
-                &lt;h4&gt;This is the second tab&lt;/h4&gt;
-                &lt;p&gt;This is the 2nd tab. Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab.Hi, this is the first tab.Hi, this is the first tab.Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab.&lt;/p&gt;
-            &lt;/div&gt;
-            &lt;div class="content" id='usage'&gt;
-                &lt;h4&gt;This is the third tab&lt;/h4&gt;
-                &lt;p&gt;And this is the 3rd tab. Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab.Hi, this is the first tab.Hi, this is the first tab.Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab.&lt;/p&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-
-    &lt;div class="container"&gt;
-        &lt;div class="row"&gt;
-
-            &lt;div class="accordians"&gt;
-                &lt;div class="accordian-section"&gt; 
-                    &lt;a href="#acc1"&gt;About JavaScript tabs&lt;/a&gt;
-                    &lt;div class="content" id='acc1'&gt;
-                        &lt;p&gt;Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab.Hi, this is the first tab.Hi, this is the first tab.Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab.&lt;/p&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-
-                &lt;div class="accordian-section"&gt; 
-                    &lt;a href="#acc2"&gt;Advantages of tabs&lt;/a&gt;
-                    &lt;div class="content" id='acc2'&gt;
-                        &lt;p&gt;This is the 2nd tab. Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab.Hi, this is the first tab.Hi, this is the first tab.Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab.&lt;/p&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-
-                &lt;div class="accordian-section"&gt; 
-                    &lt;a href="#acc3"&gt;Using tabs&lt;/a&gt;
-                    &lt;div class="content" id='acc3'&gt;
-                        &lt;p&gt;And this is the 3rd tab. Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab.Hi, this is the first tab.Hi, this is the first tab.Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab. Hi, this is the first tab.&lt;/p&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-</code></pre>
-
-
-
-<pre><code>&lt;/body&gt;
-</code></pre>
-
-<p></p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Custom-tabs-accordion maintained by <a href="https://github.com/Ganpatkakar">Ganpatkakar</a></p>
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
+	</body>
 </html>
