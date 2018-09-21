@@ -1,5 +1,7 @@
 # Custom-Tabs-Accordion
 Here you can find a custom tabs and accordion with HTML, CSS and jQuery.
+Project view :-
+http://ganpatkakar.github.io/Custom-Tabs-Accordion/
 
 # Responsive Tabs and Accordian
 These tabs and accordians are responsvie as per the screen size.
